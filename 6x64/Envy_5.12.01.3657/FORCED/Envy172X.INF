@@ -1,0 +1,1016 @@
+; Copyright (c) 1998-2005 VIA Tech, Inc. 
+[Version]
+CatalogFile=Envy24HF.cat
+Signature="$CHICAGO$"
+Class=MEDIA
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
+provider=%ICE%
+DriverVer =11/07/2011,5.12.01.3657
+
+[SourceDisksNames]
+222="ICE Envy24 Family Enhanced Audio WDM Driver Disk",,,
+
+[SourceDisksFiles]
+Envy24HF.sys=222
+nQAPO.dll=222
+;nQPropPageExt.dll=222
+
+[Manufacturer]
+%VIAMfgName%=Envy24HF,NTamd64,NTAMD64.6.0
+
+
+;;---------------------------------------------------------------;
+;;
+;; D E V I C E  C A L L O U T  S E C T I O N
+;;
+[Envy24HF.NTamd64]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_17241412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_24011412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_24021412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_24031412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_24041412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_24051412
+
+;[V00]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_C0031106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_C0051106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_C0091106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_CC031106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_B0071106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_AA041106 
+
+;[V01]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_2C0517F2 
+
+;[V02]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_030BA0A0
+
+;[V03]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_2723270F 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_6901270F 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_7840270F 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_F641270F 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_F645270F 
+ 
+;[V04]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_A015147A
+
+;[V05]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_100010B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_020010B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_020110B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_020510B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_020610B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_020710B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_020810B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_020910B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021010B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021110B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021210B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_00011681
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021310B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021410B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021510B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021610B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021710B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021810B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_021910B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_022010B0
+
+;[V06]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_A0041458
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_A2041458
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_A6041458
+
+;[V07]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170114C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170214C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170314C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170414C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170514C3
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170614C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170714C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170814C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170914C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_170A14C3 
+ 
+
+;[V08]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_0001160B 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_0010160B 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_0002160B 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_0011160B
+
+;[V09]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_50361297 
+
+;[V10]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_200A19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_220A19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_220B19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_240A19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_240B19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_165819BE
+
+;[V11]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_A0001793
+
+;[V12]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_005910DE
+
+;[V13]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_540A16F3
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_541A16F3
+
+;[V14]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_41543138
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_41543136
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_41543133
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF, PCI\VEN_1412&DEV_1724&SUBSYS_41543132
+
+
+;;---------------------------------------------------------------;
+;;
+;; D E V I C E  C A L L O U T  S E C T I O N
+;;
+[Envy24HF.NTAMD64.6.0]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_17241412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_24011412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_24021412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_24031412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_24041412
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_24051412
+
+;[V00]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_C0031106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_C0051106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_C0091106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_CC031106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_B0071106 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_AA041106 
+
+;[V01]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_2C0517F2 
+
+;[V02]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_030BA0A0
+
+;[V03]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_2723270F 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_6901270F 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_7840270F 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_F641270F 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_F645270F 
+ 
+;[V04]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_A015147A
+
+;[V05]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_100010B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_020010B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_020110B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_020510B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_020610B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_020710B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_020810B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_020910B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021010B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021110B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021210B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_00011681
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021310B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021410B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021510B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021610B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021710B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021810B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_021910B0
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_022010B0
+
+;[V06]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_A0041458
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_A2041458
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_A6041458
+
+;[V07]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170114C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170214C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170314C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170414C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170514C3
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170614C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170714C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170814C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170914C3 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_170A14C3 
+ 
+
+;[V08]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_0001160B 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_0010160B 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_0002160B 
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_0011160B
+
+;[V09]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_50361297 
+
+;[V10]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_200A19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_220A19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_220B19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_240A19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_240B19BE
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_165819BE
+
+;[V11]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_A0001793
+
+;[V12]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_005910DE
+
+;[V13]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_540A16F3
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_541A16F3
+
+;[V14]
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_41543138
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_41543136
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_41543133
+%*WDM_Envy24HF.DeviceDesc%=WDM_Envy24HF_VISTA, PCI\VEN_1412&DEV_1724&SUBSYS_41543132
+
+[DestinationDirs]
+DefaultDestDir        = 10,system32\drivers
+Envy24HF.CopyList     = 10,system32\drivers ; %SystemRoot%\system32\drivers
+QSound.CopyList       = 11
+
+[WDM_Envy24HF]
+Include=ks.inf, wdmaudio.inf
+Needs=KS.Registration, WDMAUDIO.Registration
+CopyFiles=Envy24HF.CopyList
+DelReg=WDM_Envy24HF.DelReg
+AddReg=WDM_Envy24HF.AddReg, WDM_Envy24HFGUID.AddReg, WDM_Envy24HFConfig.AddReg, WDM_C2.AddReg,Envy24HF_OEM.AddReg
+
+[WDM_Envy24HF.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,WDM_Envy24HF.Interface.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,WDM_Envy24HF.Interface.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,WDM_Envy24HF.Interface.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,WDM_Envy24HF.Interface.Topology
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_UART%,WDM.Interface.UART
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_UART%,WDM.Interface.UART
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_UART%,WDM.Interface.UART
+
+[WDM_Envy24HF.Services]
+AddService = Envy24HFS,    0x00000002, Envy24HF_Service_Inst
+
+[WDM_Envy24HF_VISTA]
+Include=ks.inf, wdmaudio.inf
+Needs=KS.Registration, WDMAUDIO.Registration, mssysfx.CopyFilesAndRegister
+CopyFiles=Envy24HF.CopyList, QSound.CopyList
+RegisterDlls=QSound.RegisterDlls
+DelReg=WDM_Envy24HF.DelReg
+AddReg=WDM_Envy24HF.AddReg, WDM_Envy24HFGUID.AddReg, WDM_Envy24HFConfig.AddReg, WDM_C2.AddReg,Envy24HF_OEM.AddReg, QSound.AddReg, DisableProtectedAudioDG.AddReg
+
+[WDM_Envy24HF_VISTA.Interfaces]
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Wave%,WDM_Envy24HF.Interface.Wave
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_Wave%,WDM_Envy24HF.Interface.Wave
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_Wave%,WDM_Envy24HF.Interface.Wave
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_Topology%,WDM_Envy24HF.Interface.Topology_Vista
+AddInterface=%KSCATEGORY_AUDIO%,%KSNAME_UART%,WDM.Interface.UART
+AddInterface=%KSCATEGORY_RENDER%,%KSNAME_UART%,WDM.Interface.UART
+AddInterface=%KSCATEGORY_CAPTURE%,%KSNAME_UART%,WDM.Interface.UART
+
+[WDM_Envy24HF_VISTA.Services]
+AddService = Envy24HFS,    0x00000002, Envy24HF_Service_Inst
+
+[Envy24HF.CopyList]
+Envy24HF.sys
+
+[Envy24HF_Service_Inst]
+DisplayName    = %Envy24HFS.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\system32\drivers\Envy24HF.sys
+
+[WDM_Envy24HF.Interface.Wave]
+AddReg=WDM_VIA.Interface.Wave.AddReg
+
+[WDM_VIA.Interface.Wave.AddReg]
+HKR,,FriendlyName,,%WDM_VIA.Wave.szPname%
+HKR,,CLSID,,%Proxy.CLSID%
+
+[WDM_Envy24HF.Interface.Topology]
+AddReg=WDM_VIA.Interface.Topo.AddReg
+
+
+[WDM_Envy24HF.Interface.Topology_Vista]
+AddReg=WDM_VIA.Interface.Topo.AddReg, QSound.Render.AddReg
+
+[WDM_VIA.Interface.Topo.AddReg]
+HKR,,FriendlyName,,%WDM_VIA.Topology.szPname%
+HKR,,CLSID,,%Proxy.CLSID%
+
+[WDM.Interface.UART]
+AddReg=WDM.Interface.UART.AddReg
+
+[WDM.Interface.UART.AddReg]
+HKR,,FriendlyName,,%WDM.UART.szPname%
+HKR,,CLSID,,%Proxy.CLSID%
+
+[WDM_Envy24HF.DelReg]
+HKLM,Enum\Root\*PNPB002
+HKLM,Enum\Root\*PNPB006
+HKLM,Enum\Root\*PNPB02F
+
+[WDM_Envy24HF.AddReg]
+HKR,,AssociatedFilters,,"wdmaud,swmidi,redbook"
+HKR,,Driver,,Envy24HF.sys
+HKR,,NTMPDriver,,"Envy24HF.sys,sbemul.sys"
+HKR,Drivers,SubClasses,,"wave,midi,mixer"
+HKR,Drivers\wave\wdmaud.drv, Driver,,wdmaud.drv
+HKR,Drivers\midi\wdmaud.drv, Driver,,wdmaud.drv
+HKR,Drivers\mixer\wdmaud.drv,Driver,,wdmaud.drv
+HKR,Drivers\wave\wdmaud.drv,Description,,%*WDMEnvy24HF.DeviceDesc%
+HKR,Drivers\midi\wdmaud.drv,Description,,%WDM_MIDI%
+HKR,Drivers\mixer\wdmaud.drv,Description,,%*WDMEnvy24HF.DeviceDesc%
+
+[WDM_Envy24HFGUID.AddReg]
+;; VIA Audio friendly names
+HKLM,%MediaCategories%\%VIAGUID.WaveOut%,Name,,%VIAPin.WaveOut%
+HKLM,%MediaCategories%\%VIAGUID.WaveOut%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.Mic1%,Name,,%VIAPin.Mic1%
+HKLM,%MediaCategories%\%VIAGUID.Mic1%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.Mic2%,Name,,%VIAPin.Mic2%
+HKLM,%MediaCategories%\%VIAGUID.Mic2%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.MicIn20DB_Gain%,Name,,%VIANode.MicIn20DB_Gain%
+HKLM,%MediaCategories%\%VIAGUID.MicIn20DB_Gain%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.Mic_Select%,Name,,%VIANode.MicSelect%
+HKLM,%MediaCategories%\%VIAGUID.Mic_Select%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.MicMux%,Name,,%VIANode.MicMux%
+HKLM,%MediaCategories%\%VIAGUID.MicMux%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.CD%,Name,,%VIAPin.CD%
+HKLM,%MediaCategories%\%VIAGUID.CD%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.Video%,Name,,%VIAPin.Video%
+HKLM,%MediaCategories%\%VIAGUID.Video%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.LineIn%,Name,,%VIAPin.LineIn%
+HKLM,%MediaCategories%\%VIAGUID.LineIn%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.AUX%,Name,,%VIAPin.AUX%
+HKLM,%MediaCategories%\%VIAGUID.AUX%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.Phone%,Name,,%VIAPin.Phone%
+HKLM,%MediaCategories%\%VIAGUID.Phone%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.PcBeep%,Name,,%VIAPin.PcBeep%
+HKLM,%MediaCategories%\%VIAGUID.PcBeep%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.MonoOutVol%,Name,,%VIANode.MonoOutVol%
+HKLM,%MediaCategories%\%VIAGUID.MonoOutVol%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.MonoOutMute%,Name,,%VIANode.MonoOutMute%
+HKLM,%MediaCategories%\%VIAGUID.MonoOutMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.MonoOutMux%,Name,,%VIANode.MonoOutMux%
+HKLM,%MediaCategories%\%VIAGUID.MonoOutMux%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.MonoOut%,Name,,%VIAPin.MonoOut%
+HKLM,%MediaCategories%\%VIAGUID.MonoOut%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.MonoOutMixDown%,Name,,%VIANode.MonoOutMixDown%
+HKLM,%MediaCategories%\%VIAGUID.MonoOutMixDown%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.LineOutMainMix%,Name,,%VIANode.LineOutMainMix%
+HKLM,%MediaCategories%\%VIAGUID.LineOutMainMix%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.LineOutMiscMix%,Name,,%VIANode.LineOutMiscMix%
+HKLM,%MediaCategories%\%VIAGUID.LineOutMiscMix%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.3DCenterCtrl%,Name,,%VIANode.3DCenter%
+HKLM,%MediaCategories%\%VIAGUID.3DCenterCtrl%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.3DDepthCtrl%,Name,,%VIANode.3DDepth%
+HKLM,%MediaCategories%\%VIAGUID.3DDepthCtrl%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.3DOnOffCtrl%,Name,,%VIANode.3DOnOff%
+HKLM,%MediaCategories%\%VIAGUID.3DOnOffCtrl%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.3DCenterCtrlPin%,Name,,%VIAPin.3DCenter%
+HKLM,%MediaCategories%\%VIAGUID.3DCenterCtrlPin%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.3DDepthCtrlPin%,Name,,%VIAPin.3DDepth%
+HKLM,%MediaCategories%\%VIAGUID.3DDepthCtrlPin%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.Stereo_OutPin%,Name,,%VIAPin.Stereo_Out%
+HKLM,%MediaCategories%\%VIAGUID.Stereo_OutPin%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.HPVolume%,Name,,%VIANode.HPVolume%
+HKLM,%MediaCategories%\%VIAGUID.HPVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.HPMute%,Name,,%VIANode.HPMute%
+HKLM,%MediaCategories%\%VIAGUID.HPMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFEnable%,Name,,%VIANode.SPDIFEnable%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFEnable%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.Stereo%,Name,,%VIAPin.Stereo%
+HKLM,%MediaCategories%\%VIAGUID.Stereo%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.DCRemove%,Name,,%VIANode.DCRemove%
+HKLM,%MediaCategories%\%VIAGUID.DCRemove%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFINOPT%,Name,,%VIAPin.SPDIFINOPT%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFINOPT%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFINRCA%,Name,,%VIAPin.SPDIFINRCA%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFINRCA%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFINCD%,Name,,%VIAPin.SPDIFINCD%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFINCD%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.WaveInMux%,Name,,%VIANode.WaveInMux%
+HKLM,%MediaCategories%\%VIAGUID.WaveInMux%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.FrontVolume%,Name,,%VIANode.FrontVolume%
+HKLM,%MediaCategories%\%VIAGUID.FrontVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.FrontMute%,Name,,%VIANode.FrontMute%
+HKLM,%MediaCategories%\%VIAGUID.FrontMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SurroundVolume%,Name,,%VIANode.SurroundVolume%
+HKLM,%MediaCategories%\%VIAGUID.SurroundVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SurroundMute%,Name,,%VIANode.SurroundMute%
+HKLM,%MediaCategories%\%VIAGUID.SurroundMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.CenterVolume%,Name,,%VIANode.CenterVolume%
+HKLM,%MediaCategories%\%VIAGUID.CenterVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.CenterMute%,Name,,%VIANode.CenterMute%
+HKLM,%MediaCategories%\%VIAGUID.CenterMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.LFEVolume%,Name,,%VIANode.LFEVolume%
+HKLM,%MediaCategories%\%VIAGUID.LFEVolume%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.LFEMute%,Name,,%VIANode.LFEMute%
+HKLM,%MediaCategories%\%VIAGUID.LFEMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.CenterStereoVol%,Name,,%VIANode.CenterStereoVol%
+HKLM,%MediaCategories%\%VIAGUID.CenterStereoVol%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.CenterStereoMute%,Name,,%VIANode.CenterStereoMute%
+HKLM,%MediaCategories%\%VIAGUID.CenterStereoMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.FET2FRONTEnable%,Name,,%VIANode.FET2FRONTenable%
+HKLM,%MediaCategories%\%VIAGUID.FET2FRONTEnable%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.REAR2FRONTEnable%,Name,,%VIANode.REAR2FRONTenable%
+HKLM,%MediaCategories%\%VIAGUID.REAR2FRONTEnable%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SMART51Enable%,Name,,%VIANode.SMART51Enable%
+HKLM,%MediaCategories%\%VIAGUID.SMART51Enable%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.MAGIC51Enable%,Name,,%VIANode.MAGIC51Enable%
+HKLM,%MediaCategories%\%VIAGUID.MAGIC51Enable%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.RECLPBK2FRONTEnable%,Name,,%VIANode.RECLPBK2FRONTEnable%
+HKLM,%MediaCategories%\%VIAGUID.RECLPBK2FRONTEnable%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.6CHMIX%,Name,,%VIANode.6chMix%
+HKLM,%MediaCategories%\%VIAGUID.6CHMIX%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.6CHDEST%,Name,,%VIAPin.6CHDEST%
+HKLM,%MediaCategories%\%VIAGUID.6CHDEST%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.VIRTSPDIF%,Name,,%VIAPin.VIRTSPDIF%
+HKLM,%MediaCategories%\%VIAGUID.VIRTSPDIF%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFMute%,Name,,%VIANode.SPDIFMute%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFMute%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.VIRTLOOPBACK%,Name,,%VIAPin.VIRTLOOPBACK%
+HKLM,%MediaCategories%\%VIAGUID.VIRTLOOPBACK%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFMode%,Name,,%VIANode.SPDIFMode%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFMode%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFHIFI%,Name,,%VIANode.SPDIFHIFI%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFHIFI%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFMux%,Name,,%VIANode.SPDIFMux%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFMux%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFDEST%,Name,,%VIAPin.SPDIFDEST%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFDEST%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.SPDIFINMONITOR%,Name,,%VIANode.SPDIFINMONITOR%
+HKLM,%MediaCategories%\%VIAGUID.SPDIFINMONITOR%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.NULLMUTE%,Name,,%VIANode.NULLMUTE%
+HKLM,%MediaCategories%\%VIAGUID.NULLMUTE%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.FRONTMIC%,Name,,%VIANode.FrontMic%
+HKLM,%MediaCategories%\%VIAGUID.FRONTMIC%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.BACKMIC%,Name,,%VIAPin.BackMic%
+HKLM,%MediaCategories%\%VIAGUID.BACKMIC%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.FRONTMICPIN%,Name,,%VIAPin.FrontMic%
+HKLM,%MediaCategories%\%VIAGUID.FRONTMICPIN%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.FRONTLINEIN%,Name,,%VIAPin.FrontLineIn%
+HKLM,%MediaCategories%\%VIAGUID.FRONTLINEIN%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.BACKLINEIN%,Name,,%VIAPin.BackLineIn%
+HKLM,%MediaCategories%\%VIAGUID.BACKLINEIN%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.CDVIDEO%,Name,,%VIAPin.CDVideo%
+HKLM,%MediaCategories%\%VIAGUID.CDVIDEO%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.RECMONITOR%,Name,,%VIAPin.RECMonitor%
+HKLM,%MediaCategories%\%VIAGUID.RECMONITOR%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.RECSPDIF%,Name,,%VIAPin.RECSpdif%
+HKLM,%MediaCategories%\%VIAGUID.RECSPDIF%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.REC6CH%,Name,,%VIAPin.REC6CH%
+HKLM,%MediaCategories%\%VIAGUID.REC6CH%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.CTRLFESWAP%,Name,,%VIAPin.CTRLFESWAP%
+HKLM,%MediaCategories%\%VIAGUID.CTRLFESWAP%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.FIX6CH%,Name,,%VIAPin.FIX6CH%
+HKLM,%MediaCategories%\%VIAGUID.FIX6CH%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.INPUTMIX%,Name,,%VIAPin.INPUTMix%
+HKLM,%MediaCategories%\%VIAGUID.INPUTMIX%,Display,1,00,00,00,00
+
+HKLM,%MediaCategories%\%VIAGUID.PCMSPDIFVOL%,Name,,%VIANode.PCMSPDIFVOL%
+HKLM,%MediaCategories%\%VIAGUID.PCMSPDIFVOL%,Display,1,00,00,00,00
+
+
+;; Non-Local Pins
+HKLM,%MediaCategories%\%VIAGUID.Front%,Name,,%VIAPin.Front%
+HKLM,%MediaCategories%\%VIAGUID.Front%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.Surround%,Name,,%VIAPin.Surround%
+HKLM,%MediaCategories%\%VIAGUID.Surround%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.Center%,Name,,%VIAPin.Center%
+HKLM,%MediaCategories%\%VIAGUID.Center%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.LFE%,Name,,%VIAPin.LFE%
+HKLM,%MediaCategories%\%VIAGUID.LFE%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.CenterStereo%,Name,,%VIAPin.CenterStereo%
+HKLM,%MediaCategories%\%VIAGUID.CenterStereo%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.CustomVideo%,Name,,%VIAPin.CustomVideo%
+HKLM,%MediaCategories%\%VIAGUID.CustomVideo%,Display,1,00,00,00,00
+HKLM,%MediaCategories%\%VIAGUID.PCMSPDIFOUT%,Name,,%VIAPin.PCMSPDIFOUT%
+HKLM,%MediaCategories%\%VIAGUID.PCMSPDIFOUT%,Display,1,00,00,00,00
+
+
+
+
+[WDM_Envy24HFConfig.AddReg]
+;; The below registry is for setting the default value in the mixer control at
+;; driver startup.
+;; The procedure to change the default setting:
+;; (1). Executing "Volune control" application to adjust the volume level.
+;; (2). Restarting Windows.
+;; (3). Executing "REGEDIT.EXE" and searching the registry key listed below,
+;;      then update the value of the registry key to the following.
+;;
+;; Note:
+;; (1). The default setting of volume level for Wave and SW Synth can NOT
+;;      be set in the WDM Audio Miniport driver and this INF.
+;; (2). Any change in this INF file, you MUST have a new WHQL submission
+;;      for getting digital signature.
+;;
+;;---------------------------------+-----------+-----------|
+;; Registry key                    |DWORD type | value     |
+;;---------------------------------+-----------+-----------|
+HKR,Settings,ChannelConfig,          0x00010001, 3
+HKR,Settings,VA_WaveOutVolumeL,      0x00010001, 0x18000
+HKR,Settings,VA_WaveOutVolumeR,      0x00010001, 0x18000
+HKR,Settings,VA_WaveOutMute,         0x00010001, 0
+HKR,Settings,VA_PCSpeakerVolume,     0x00010001, 4294570499
+
+HKR,Settings,VA_PCSpeakerMute,       0x00010001, 0
+HKR,Settings,VA_PhoneVolume,         0x00010001, 389635
+HKR,Settings,VA_PhoneMute,           0x00010001, 0
+HKR,Settings,VA_MicVolume,           0x00010001, 389635
+
+HKR,Settings,VA_MicMute,             0x00010001, 1
+HKR,Settings,VA_MicGainL,            0x00010001, 0
+HKR,Settings,VA_MicGainR,            0x00010001, 0
+HKR,Settings,VA_MicSelectL,          0x00010001, 0
+
+HKR,Settings,VA_MicSelectR,          0x00010001, 0
+HKR,Settings,VA_LineInVolumeL,       0x00010001, 389635
+HKR,Settings,VA_LineInVolumeR,       0x00010001, 389635
+HKR,Settings,VA_LineInMute,          0x00010001, 1
+
+HKR,Settings,VA_CDPlayerVolumeL,     0x00010001, 0xfff40000
+HKR,Settings,VA_CDPlayerVolumeR,     0x00010001, 0xfff40000
+HKR,Settings,VA_CDPlayerMute,        0x00010001, 0
+HKR,Settings,VA_VideoVolumeL,        0x00010001, 389635
+
+HKR,Settings,VA_VideoVolumeR,        0x00010001, 389635
+HKR,Settings,VA_VideoMute,           0x00010001, 1
+HKR,Settings,VA_AUXVolumeL,          0x00010001, 389635
+HKR,Settings,VA_AUXVolumeR,          0x00010001, 389635
+
+HKR,Settings,VA_AUXMute,             0x00010001, 1
+HKR,Settings,VA_3DDepthVolume,       0x00010001, 0x80000000
+HKR,Settings,VA_3DDepthEnhanceL,     0x00010001, 1
+HKR,Settings,VA_3DDepthEnhanceR,     0x00010001, 1
+
+HKR,Settings,VA_MasterVolumeL,       0x00010001, 4294570499
+HKR,Settings,VA_MasterVolumeR,       0x00010001, 4294570499
+HKR,Settings,VA_MasterMute,          0x00010001, 0
+HKR,Settings,VA_SurroundVolumeL,     0x00010001, 0
+
+HKR,Settings,VA_SurroundVolumeR,     0x00010001, 0
+HKR,Settings,VA_SurroundMute,        0x00010001, 0
+HKR,Settings,VA_CenterVolumeL,       0x00010001, 0
+HKR,Settings,VA_CenterMute,          0x00010001, 0
+
+HKR,Settings,VA_LFEVolumeL,          0x00010001, 0
+HKR,Settings,VA_LFEMute,             0x00010001, 0
+
+HKR,Settings,VA_CStereoVolumeL,      0x00010001, 0
+HKR,Settings,VA_CStereoVolumeR,      0x00010001, 0
+HKR,Settings,VA_CenterStereoMute,    0x00010001, 0
+HKR,Settings,VA_RecSelect,           0x00010001, 5
+
+HKR,Settings,VA_RecMasterMute,       0x00010001, 0
+HKR,Settings,VA_RecStereoMixVolumeL, 0x00010001, 0x00107203
+HKR,Settings,VA_RecStereoMixVolumeR, 0x00010001, 0x00107203
+HKR,Settings,VA_RecMicVolume,        0x00010001, 0x00107203
+
+HKR,Settings,VA_RecLineInVolumeL,    0x00010001, 0x00107203
+HKR,Settings,VA_RecLineInVolumeR,    0x00010001, 0x00107203
+HKR,Settings,VA_RecCDPlayerVolumeL,  0x00010001, 0x00107203
+HKR,Settings,VA_RecCDPlayerVolumeR,  0x00010001, 0x00107203
+
+HKR,Settings,VA_RecVideoVolumeL,     0x00010001, 0x00107203
+HKR,Settings,VA_RecVideoVolumeR,     0x00010001, 0x00107203
+HKR,Settings,VA_RecAUXVolumeL,       0x00010001, 0x00107203
+HKR,Settings,VA_RecAUXVolumeR,       0x00010001, 0x00107203
+
+HKR,Settings,VA_MonoOutSelect,       0x00010001, 1
+HKR,Settings,VA_MonoOutVolume1,      0x00010001, 4294570499
+HKR,Settings,VA_MonoOutVolume2,      0x00010001, 4294570499
+HKR,Settings,VA_MonoOutMute,         0x00010001, 1
+
+HKR,Settings,VA_HeadphoneVolumeL,    0x00010001, 0x00060000
+HKR,Settings,VA_HeadphoneVolumeR,    0x00010001, 0x00060000
+HKR,Settings,VA_HeadphoneMute,       0x00010001, 1
+HKR,Settings,VA_MaxMicVol,           0x00010001, 786432
+
+;HKR,Settings,VA_MaxMicVol,          0x00010001, 0xFFF40000
+;HKR,Settings,VA_MaxRecVol,          0x00010001, 0x00168000
+
+HKR,Settings,VA_SPDIFOutEnableL,     0x00010001, 1
+HKR,Settings,VA_SPDIFOutEnableR,     0x00010001, 1
+HKR,Settings,VA_FET2FRONTEnableL,    0x00010001, 0
+HKR,Settings,VA_FET2FRONTEnableR,    0x00010001, 0
+HKR,Settings,VA_REAR2FRONTEnableL,   0x00010001, 0
+
+HKR,Settings,VA_REAR2FRONTEnableR,   0x00010001, 0
+HKR,Settings,VA_SMART51EnableL,      0x00010001, 0
+HKR,Settings,VA_SMART51EnableR,      0x00010001, 0
+HKR,Settings,VA_MAGIC51EnableL,      0x00010001, 0
+
+HKR,Settings,VA_MAGIC51EnableR,      0x00010001, 0
+HKR,Settings,VA_RecLpbk2FrontL,      0x00010001, 0
+HKR,Settings,VA_RecLpbk2FrontL,      0x00010001, 0
+HKR,Settings,VA_FrontVolumeL,        0x00010001, 0
+
+HKR,Settings,VA_FrontVolumeR,        0x00010001, 0
+HKR,Settings,VA_SPDIFSelect,         0x00010001, 0x21
+HKR,Settings,VA_WaveIn_DCRemove,    0x00010001, 0x1
+HKR,Settings,VA_SpdifInSwitch,       0x00010001, 0
+
+HKR,Settings,VA_SPDIF_HIFI,          0x00010001, 1
+
+HKR,Settings,VA_RecMonitorMute,      0x00010001, 1
+HKR,Settings,VA_CenterLFESwap,       0x00010001, 0
+HKR,Settings,VA_PCMSpdifVolumeL,     0x00010001, 0
+HKR,Settings,VA_PCMSpdifVolumeR,     0x00010001, 0
+
+
+HKR,Settings,VA_CodecDacTypeID,      0x00010001, 3
+HKR,Settings,VA_CodecAdcTypeID,      0x00010001, 3
+
+HKR,Settings,VA_UseSensaura,         0x00010001, 0
+
+
+HKR,Settings,VA_Timer,               0x00010001, 1000
+HKR,Settings,VA_WM8776_AIN_GAIN,     0x00010001, 0x0
+HKR,Settings,VA_HPAUTOMUTE,          0x00010001, 0x1
+
+HKR,Settings,VA_CPLSpdifInEnable,    0x00010001, 0x0
+HKR,Settings,VA_CPLSpdifInSwitch,    0x00010001, 0x0
+HKR,Settings,VA_CPLSetExternalClk,   0x00010001, 0x0
+HKR,Settings,VA_CPLMonitorDevice,    0x00010001, 0x0
+
+HKR,Settings,VA_CPLSpdifOutEnable,   0x00010001, 0x1
+HKR,Settings,VA_CPLSpdifOutSwitch,   0x00010001, 0x0
+
+HKR,Settings,VA_CPLEnableHISR,       0x00010001, 0x0
+HKR,Settings,VA_CPLRelaySwitch,      0x00010001, 0x0
+
+HKR,Settings,VA_CPL8Speakersetting,  0x00010001, 0x0
+HKR,Settings,VA_CPLEnablePseudo8CH,  0x00010001, 0x0
+HKR,Settings,VA_CPLSpeakerTest,      0x00010001, 0x0
+
+HKR,Settings,VA_CPLSelectSR,         0x00010001, 48000
+HKR,Settings,VA_CPLAutoSR,           0x00010001, 0x0
+
+
+HKR,Settings,VA_OEMINITSET,          0x00010001, 1
+HKR,Settings,VA_INSTALLINITSET,      0x00010001, 1
+HKR,Settings,VA_EEPROMINITSET,       0x00010001, 1
+ 
+HKR,Settings,VA_UseQSound,          0x00010001, 0
+
+[WDM_C2.AddReg]
+HKR,Settings,VA_PCSpeakerVolume,     0x00010001, 0xfff9f203
+HKR,Settings,VA_CDPlayerVolumeL,     0x00010001, 0xfff40000
+HKR,Settings,VA_CDPlayerVolumeR,     0x00010001, 0xfff40000
+HKR,Settings,VA_MasterVolumeL,       0x00010001, 0xfff9f203
+HKR,Settings,VA_MasterVolumeR,       0x00010001, 0xfff9f203
+;HKR,Settings,VA_SurroundVolumeL,    0x00010001, 0xfff9f203
+;HKR,Settings,VA_SurroundVolumeR,    0x00010001, 0xfff9f203
+;HKR,Settings,VA_CenterVolume,       0x00010001, 0xfff9f203
+;HKR,Settings,VA_LFEVolume,          0x00010001, 0xfff9f203
+HKR,Settings,VA_MonoOutVolume1,      0x00010001, 0xfff9f203
+HKR,Settings,VA_MonoOutVolume2,      0x00010001, 0xfff9f203
+HKR,Settings,VA_HeadphoneVolumeL,    0x00010001, 0x00060000
+HKR,Settings,VA_HeadphoneVolumeR,    0x00010001, 0x00060000
+HKR,Settings,VA_MaxMicVol,           0x00010001, 0x000c0000
+
+[Envy24HF_OEM.AddReg]
+;; For the topology configuration, the input line of mixer can be disabled
+;; by outcommenting some of the lines below.
+;HKR,Settings,DisablePCSpeaker,1,1
+;HKR,Settings,DisablePhone,1,1
+;HKR,Settings,DisableVideo,1,1
+;HKR,Settings,DisableAUX,1,1
+;HKR,Settings,DisableLineIn,1,1
+;HKR,Settings,DisableCDPlayer,1,1
+;HKR,Settings,DisableMic,1,1
+;HKR,Settings,DisableMicGain,1,1
+HKR,Settings,Disable3DDepth,1,1
+HKR,Settings,DisableMonoOut,1,1
+HKR,Settings,DisableHeadphone,1,1
+;HKR,Settings,DisableVolHPhone,1,1
+;HKR,Settings,DisableRecMuteAll,1,1
+;HKR,Settings,DisableMicSelect,1,1
+;HKR,Settings,DisableSurround,1,1
+;HKR,Settings,DisableCenterLFE,1,1
+;HKR,Settings,DisableCenterFront,1,1
+;HKR,Settings,DisableSPDIFOUT,1,1
+;HKR,Settings,DisableDOLBYAC3,1,1
+;HKR,Settings,DisableSPDIFIN,1,1
+;HKR,Settings,DisableSmart51,1,1
+;HKR,Settings,DisableMagic51,1,1
+;HKR,Settings,DisableMonoMic,1,1
+
+;;Below is added for vista (Mike Lee)
+HKR,Settings,DisableQSound,1,1
+
+;;
+;; APO installation.
+;; BUG: APO registers for 2K/XP as well.
+;; TODO: create seperate section for Vista
+;;
+[QSound.CopyList]
+nQAPO.dll
+;nQPropPageExt.dll
+
+[QSound.RegisterDlls]
+11,,nQAPO.dll,1
+;11,,nQPropPageExt.dll,1
+
+[QSound.Render.AddReg]
+; use MS APO:
+;; HKR,"FX\\0",%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
+;; HKR,"FX\\0",%PKEY_SYSFX_PreMixClsid%,,%MS_SYSFX_PREMIX_CLSID%
+;; HKR,"FX\\0",%PKEY_SYSFX_PostMixClsid%,,%MS_SYSFX_POSTMIX_CLSID%
+;; HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%MS_SYSFX_UI_CLSID%
+;; HKR,"FX\\0",%PKEY_DisplayName%,,%MS_SYSFX_FriendlyName%
+
+; or use QSound APO:
+HKR,"FX\\0",%PKEY_ItemNameDisplay%,,%SYSFX_FriendlyName%
+HKR,"FX\\0",%PKEY_SYSFX_PreMixClsid%,,%SYSFX_PREMIX_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_PostMixClsid%,,%SYSFX_POSTMIX_CLSID%
+;20071018HKR,"FX\\0",%PKEY_SYSFX_UiClsid%,,%SYSFX_UI_CLSID%
+HKR,"FX\\0",%PKEY_SYSFX_FriendlyName%,,%SYSFX_FriendlyName%
+;HKR,"FX\\0",%PKEY_SYSFX_Association%,,%KSNODETYPE_ANY%  ; GUID NULL means install on all endpoints
+;                                                        ; supply a specific GUID to install on a particular bridge pin node type
+HKR,"FX\\0",%PKEY_SYSFX_Association%,,%KSNODETYPE_SPEAKER%  ; install for render endpoint
+
+
+[QSound.AddReg]
+; reuse Microsoft's APOs
+HKLM,"SOFTWARE\QSound Labs, Inc.\APO",LFX,,"{62dc1a93-ae24-464c-a43e-452f824c4250}"
+HKLM,"SOFTWARE\QSound Labs, Inc.\APO",GFX,,"{637c490d-eee3-4c0a-973f-371958802da2}"
+;20071018HKLM,"SOFTWARE\QSound Labs, Inc.\APO",UI,,"{5860E1C5-F95C-4a7a-8EC8-8AEF24F379A1}"
+
+; enable use of APO
+[DisableProtectedAudioDG.AddReg]
+HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Audio,DisableProtectedAudioDG,0x00010001,1
+
+
+;;---------------------------------------------------------------;
+;; 
+;; S T R I N G S
+;;
+
+[Strings]
+ICE = "VIA - IC Ensemble, Inc."
+VIAMfgName="VIA - IC Ensemble, Inc."
+*WDM_Envy24HF.DeviceDesc="Envy24 Family Audio Controller WDM"
+*WDMEnvy24HF.DeviceDesc="Envy24 Family Audio Controller WDM"
+WDM_VIA.Wave.szPname="Envy24 Family Audio (WDM)"
+WDM_VIA.Topology.szPname="Envy24 Family Audio (Topology)"
+MediaCategories="SYSTEM\CurrentControlSet\Control\MediaCategories"
+WDM_MIDI="WDM-based Device"
+
+VIAGUID.WaveOut           ="{AB0CD4FA-3023-4a48-9250-9E81DF154485}"
+VIAGUID.Mic1              ="{B746E7DE-221D-44aa-A8F1-977C301CF96A}"
+VIAGUID.Mic2              ="{FDA6A65A-58E9-4e2e-ACD8-A6AA103C1B6F}"
+VIAGUID.MicIn20DB_Gain    ="{F6F5FF9F-DEFF-47fa-A9CD-AB8852FD4A47}"
+VIAGUID.Mic_Select        ="{18A96D81-5014-4bff-B508-F07B1E06C77A}"
+VIAGUID.MicMux            ="{2C732ED3-68D7-4609-84C4-60248648F8E2}"
+VIAGUID.CD                ="{EC2B8FCE-108B-4de9-A16E-0D3D49636D5F}"
+VIAGUID.Video             ="{4C9B94F7-3B8F-47bd-8F09-8795A2DBF712}"
+VIAGUID.LineIn            ="{01B80511-13A9-462b-ABBB-DE4DE85823AC}"
+VIAGUID.AUX               ="{A106DE5F-24AC-4a27-9BFB-2258A78C6B16}"
+VIAGUID.Phone             ="{866CA3F9-3992-4dd0-B8EB-98473175A771}"
+VIAGUID.PcBeep            ="{E521E21E-01E8-4a40-82E0-598F254A1106}"
+VIAGUID.Stereo_OutPin     ="{A707042A-F841-46fc-A5A7-3F58EA0FD25A}"
+VIAGUID.MonoOutVol        ="{F5619D63-A074-43b8-BEA7-3AECE6E0957C}"
+VIAGUID.MonoOutMute       ="{A8C8C98F-ADCF-427d-A15F-907C91B61E24}"
+VIAGUID.MonoOutMixDown    ="{9FEEDD36-F830-4dc6-9750-6DBE58591404}"
+VIAGUID.MonoOutMux        ="{C97E83ED-541F-4c5d-A7C3-6BE9CAB1ACFA}"
+VIAGUID.MonoOut           ="{31F975EE-412F-4b37-ACAB-A28DB116C173}"
+VIAGUID.LineOutMainMix    ="{744250B1-6764-4a29-8EDC-88AFD5E5D31F}"
+VIAGUID.LineOutMiscMix    ="{07973FD6-7C6B-4328-93D2-74EB349E5322}"
+VIAGUID.3DCenterCtrl      ="{DB6993B5-5FF7-4a2d-B7B5-7CA7D8EE659E}"
+VIAGUID.3DDepthCtrl       ="{31FA4CCD-1EA8-43ae-A58F-0BF543AD1749}"
+VIAGUID.3DOnOffCtrl       ="{E92A3601-0E07-46f6-A207-C7B4891D30E3}"
+VIAGUID.3DCenterCtrlPin   ="{FACB2E24-06B3-4341-B56F-9EDD81257321}"
+VIAGUID.3DDepthCtrlPin    ="{80B64631-E04B-4f69-9E9F-041F822C1A0D}"
+VIAGUID.HPVolume          ="{048B5922-9488-4db3-89CE-2BB0B398FF14}"
+VIAGUID.HPMute            ="{94CE7647-5FEC-42f0-B291-DE6466F4AD70}"
+VIAGUID.SPDIFEnable       ="{E9F9C219-365E-48be-89E0-CC142E777EAD}"
+VIAGUID.Stereo            ="{77408CC6-CCF9-41b9-8294-6C07E7A396EA}"
+
+VIAGUID.DCRemove          ="{48E7E1D4-BCC0-417b-AAF4-8724D077809F}"
+VIAGUID.SPDIFINOPT        ="{E3C0EB49-1DF8-4907-B300-23D151EC9D6F}"
+VIAGUID.SPDIFINRCA        ="{EB146101-7000-4e1f-8D99-A2C6AD1EC65E}"
+VIAGUID.SPDIFINCD         ="{A182FEC7-9867-49f1-ABEF-00965D5960A3}"
+VIAGUID.WaveInMux         ="{780ACC85-C249-4920-9A78-48ACFB19BDF4}"
+
+VIAGUID.FrontVolume       ="{94493536-BB52-41dc-93CD-B6B8F368E3A1}"
+VIAGUID.FrontMute         ="{B110B2FA-F7FA-4326-9D0F-9A713D82F82E}"
+VIAGUID.SurroundVolume    ="{3DA8863E-F16B-4de5-B39A-A6E5DFEF8A71}"
+VIAGUID.SurroundMute      ="{D35427D7-59EF-40ce-AD1F-982951EEC97C}"
+VIAGUID.CenterVolume      ="{002334DE-3D75-430c-970E-53CE2156CC05}"
+VIAGUID.CenterMute        ="{D3B3F446-E655-4b23-9E2C-D4E0C3F27F71}"
+VIAGUID.LFEVolume         ="{56794C32-7173-47e6-879D-C7FFEEA46D27}"
+VIAGUID.LFEMute           ="{E91818C8-B10C-4f08-923C-9A3858306883}"
+VIAGUID.CenterStereoVol   ="{28BAFEEE-2EB0-4aba-A97F-DAFA9CE88F81}"
+VIAGUID.CenterStereoMute  ="{3DC2C446-352B-4da9-A66F-6A03A175B8D9}"
+VIAGUID.FET2FRONTEnable   ="{35491B73-F91B-467b-8DB2-65F239024F50}"
+VIAGUID.REAR2FRONTEnable  ="{DD5F31E6-582A-4e9e-B90E-1657D896E197}"
+VIAGUID.SMART51Enable     ="{E173B131-A3D8-4fd8-98AB-F5F8EDB2C6AE}"
+VIAGUID.MAGIC51Enable     ="{46357939-D573-4edf-B470-FC160691A806}"
+VIAGUID.RECLPBK2FRONTEnable="{96163A4D-E31C-494f-95CD-FA65231430AF}"
+VIAGUID.6CHMIX            ="{0583D8CE-1EF4-495f-91AF-9D8AE6ECA314}"
+VIAGUID.6CHDEST           ="{D194D1B5-C366-457e-A579-60B41B7D0963}"
+
+VIAGUID.VIRTSPDIF         ="{59245268-443F-462b-A8FC-6EBDC7D85128}"
+VIAGUID.SPDIFMute         ="{A89B8AFE-0BF7-47be-A675-450E30EA235F}"
+VIAGUID.VIRTLOOPBACK      ="{BF6FC19E-DD1D-4862-8610-7FF90678F650}"
+VIAGUID.SPDIFMode         ="{86219A98-9340-4bc3-B447-67114CFA872F}"
+VIAGUID.SPDIFHIFI         ="{3E7958B1-043B-4172-A1FF-72B032330DDA}"
+VIAGUID.SPDIFMux          ="{B2F6ECD7-B0AC-49ad-9573-64114E99B1ED}"
+VIAGUID.SPDIFDEST         ="{887EA3BD-D060-428b-B008-CCD1549642C5}"
+VIAGUID.SPDIFINMONITOR    ="{E2492D0D-B698-4a40-801D-7B096DF65572}"
+VIAGUID.NULLMUTE          ="{BFA78B90-0374-4e18-AD40-1633CA527646}"
+VIAGUID.FRONTMIC          ="{A2504CA3-7DE8-4ae6-B1DF-C43DD90B002F}"
+VIAGUID.PCMSPDIFVOL       ="{8957BA7E-EA3B-490d-AA8C-AA444E59323C}"
+
+;; Pins (non-localizeable)
+VIAGUID.Front             ="{25FE1E02-DAF8-4965-8299-DE41B05BFF47}"
+VIAGUID.Surround          ="{4A756BD7-8E22-42f0-875A-024B0767AE69}"
+VIAGUID.Center            ="{84277567-839D-4f94-A331-E6BC258F6F6E}"
+VIAGUID.LFE               ="{F833BAFE-C161-4266-8C40-C21D40F1350E}"
+VIAGUID.CenterStereo      ="{5A65459C-B523-4117-9CF0-43C97BE540A5}"
+VIAGUID.FRONTLINEIN       ="{EEDD235B-4DCF-4cd5-882C-E39417A2B9FD}"
+VIAGUID.BACKLINEIN        ="{3A9157FB-127D-4ad7-B761-96A425B30D15}"
+VIAGUID.BACKMIC           ="{11B9712D-0EF3-40c0-9AB4-E1AF648F422B}"
+VIAGUID.FRONTMICPIN       ="{FC02C011-4656-46fd-8155-18932CA15ACA}"
+VIAGUID.CDVIDEO           ="{4121627F-11B6-4eff-9E50-C6BF9A93BC98}"
+VIAGUID.RECMONITOR        ="{A395EB28-3F8C-438f-B0A9-A0A0C336BAEE}"
+VIAGUID.RECSPDIF          ="{E13D152A-707B-4f08-87CD-C6CC8EC72BE7}"
+VIAGUID.REC6CH            ="{E63524F4-7E9E-4432-9E51-33EAD0D700C1}"
+VIAGUID.FIX6CH            ="{5FFA5808-F27B-4640-BA40-336757FA194A}"
+VIAGUID.CTRLFESWAP        ="{0885E7A3-5956-4241-B399-5694F38C7CDA}"
+VIAGUID.INPUTMIX          ="{85FB9CF5-4128-486a-968E-85C0AE278088}"
+VIAGUID.CustomVideo       ="{4C9B94F7-3B8F-47bd-8F09-8795A2DBF712}"
+VIAGUID.PCMSPDIFOUT       ="{3D9584B0-C157-4a17-92C8-2E03757D0E8C}"
+
+
+;; VIA friendly names (localizeable)
+VIAPin.WaveOut          ="WaveOut"
+VIAPin.Mic1             ="Mic"
+VIAPin.Mic2             ="Mic2"
+VIAPin.CD               ="CD In"
+VIAPin.Video            ="Video"
+VIAPin.LineIn           ="Line-In"
+VIAPin.AUX              ="Aux"
+VIAPin.Phone            ="Phone"
+VIAPin.PcBeep           ="PC Speaker"
+VIAPin.Stereo_Out       ="Stereo Mixer"
+VIAPin.MonoOut          ="MonoOut"
+VIAPin.3DCenter         ="3D Center"
+VIAPin.3DDepth          ="3D Depth"
+VIAPin.Stereo           ="Master Speakers"
+
+VIAPin.SPDIFINOPT       ="S/PDIF (Opt)"
+VIAPin.SPDIFINRCA       ="S/PDIF (Coax)"
+VIAPin.SPDIFINCD        ="S/PDIF (CD)"
+
+VIAPin.Front            ="Front Speakers"
+VIAPin.Surround         ="Rear Speakers"
+VIAPin.Center           ="Center"
+VIAPin.LFE              ="Subwoofer"
+VIAPin.CenterStereo     ="Back Stereo"
+;VIAPin.CenterStereo     ="Center Stereo"
+VIAPin.6CHDEST          ="All Channels Output Control"
+
+VIAPin.VIRTSPDIF        ="S/PDIF Output"
+VIAPin.VIRTLOOPBACK     ="Loopback"
+VIAPin.SPDIFDEST        ="S/PDIF out Control"
+VIAPin.FrontLineIn      ="Front AuxIn"
+VIAPin.BackLineIn       ="Rear LineIn"
+VIAPin.FrontMic         ="Front MicIn"
+VIAPin.BackMic          ="Rear MicIn"
+VIAPin.CDVideo          ="CD/Video"
+VIAPin.RECMonitor       ="Monitor RecIn"
+VIAPin.RECSpdif         ="RecIn S/PDIF Monitor"
+VIAPin.REC6CH           ="RecIn 6CH Monitor"
+VIAPin.FIX6CH           ="Fix at 6CH"
+VIAPin.CTRLFESWAP       ="Center/LFE Swap"
+VIAPin.INPUTMix         ="Input Mix"
+VIAPin.CustomVideo      ="Video"
+VIAPin.PCMSPDIFOUT      ="PCM SPDIF"
+
+;; Nodes
+VIANode.MicIn20DB_Gain  ="20dB boost"
+VIANode.MicSelect       ="Set to Front Mic"
+VIANode.MicMux          ="MicMux"
+VIANode.WaveInMux       ="WaveInMux"
+VIANode.MonoOutVol      ="MonoOutVol"
+VIANode.MonoOutMute     ="MonoOutMute"
+VIANode.MonoOutMixDown  ="MonoOutMixDown"
+VIANode.MonoOutMux      ="Mono Out Select"
+VIANode.LineOutMainMix  ="LineOutMainMix"
+VIANode.LineOutMiscMix  ="LineOutMiscMix"
+VIANode.3DCenter        ="3D Center Node"
+VIANode.3DDepth         ="3D Depth Node"
+VIANode.3DOnOff         ="3D Stereo Enhancement"
+VIANode.HPVolume        ="Headphone Volume"
+VIANode.HPMute          ="Headphone Mute"
+VIANode.SPDIFEnable     ="S/PDIF Enable"
+VIANode.SPDIFHIFI       ="HI-SR(96KHz)"
+
+VIANode.DCRemove        ="DC Remove"
+VIANode.RECLPBK2FRONTEnable="Output from Record Source"
+
+VIANode.FrontVolume     ="Front Volume"
+VIANode.FrontMute       ="Front Mute"
+VIANode.SurroundVolume  ="Rear Speaker Volume"
+VIANode.SurroundMute    ="Rear Speaker Mute"
+VIANode.CenterVolume    ="Center Volume"
+VIANode.CenterMute      ="Center Mute"
+;VIANode.CenterStereoVol ="Center Stereo Volume"
+;VIANode.CenterStereoMute="Center Stereo Mute"
+VIANode.CenterStereoVol ="Back Stereo Volume"
+VIANode.CenterStereoMute="Back Stereo Mute"
+VIANode.LFEVolume       ="Subwoofer Volume"
+VIANode.LFEMute         ="Subwoofer Mute"
+VIANode.FET2FRONTenable ="Center/LFE Mixdown to Front"
+VIANode.REAR2FRONTenable="Rear Mixdown to Front"
+VIANode.SMART51Enable   ="Smart 5.1 Enable"
+VIANode.MAGIC51Enable   ="Magic 5.1 Enable"
+VIANode.6chMix          ="Multi-channel Mix"
+
+VIANode.SPDIFMute       ="S/PDIF Mute"
+VIANode.SPDIFMode       ="S/PDIF Mode(Professional mode)"
+VIANode.SPDIFMux        ="S/PDIF Mux"
+VIANode.SPDIFINMONITOR  ="S/PDIF Monitor"
+VIANode.NULLMUTE        ="NULL Mute"
+VIANode.FrontMic        ="Front Mic Select"
+VIANode.PCMSPDIFVOL     ="PCMSPDIF Volume"
+
+
+
+Proxy.CLSID="{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+KSCATEGORY_AUDIO="{6994AD04-93EF-11D0-A3CC-00A0C9223196}"
+KSCATEGORY_RENDER="{65E8773E-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_CAPTURE="{65E8773D-8F56-11D0-A3B9-00A0C9223196}"
+KSCATEGORY_TOPOLOGY="{DDA54A40-1E4C-11D1-A050-405705C10000}"
+
+Audio3D_CLSID="{D8F1EEE0-F634-11CF-8700-00A0245D918B}"
+
+KSNAME_Wave="Wave"
+KSNAME_UART="UART"
+KSNAME_Topology="Topology"
+
+WDM.UART.szPname = "ICE MIDI External Port"
+Envy24HFS.SvcDesc= "ICE Envy24 Family Audio Controller WDM 64 bit"
+DiskDescription  = "ICE Envy24 Family Audio WDM Driver Disk"
+;wdmaud.SvcDesc = "Microsoft WDM Virtual Wave Driver (WDM)"
+
+
+;;
+;; extra strings for APO
+;;
+KSNODETYPE_ANY           = "{00000000-0000-0000-0000-000000000000}"
+KSNODETYPE_SPEAKER       = "{DFF21CE1-F70F-11D0-B917-00A0C9223196}"
+
+; MS APO:
+;; MS_SYSFX_UI_CLSID        = "{5860E1C5-F95C-4a7a-8EC8-8AEF24F379A1}"
+;; MS_SYSFX_PREMIX_CLSID    = "{62dc1a93-ae24-464c-a43e-452f824c4250}"
+;; MS_SYSFX_POSTMIX_CLSID   = "{637c490d-eee3-4c0a-973f-371958802da2}"
+;; MS_SYSFX_FriendlyName    = "Microsoft Audio Home Theater Effects"
+
+; propkeys defs:
+PKEY_SYSFX_Association   = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},0"
+PKEY_SYSFX_PreMixClsid   = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},1"
+PKEY_SYSFX_PostMixClsid  = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},2"
+;20071018PKEY_SYSFX_UiClsid       = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},3"
+PKEY_SYSFX_FriendlyName  = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},4"
+PKEY_DisplayName         = "{D04E05A6-594B-4FB6-A80D-01AF5EED7D1D},4"
+PKEY_ItemNameDisplay     = "{B725F130-47EF-101A-A5F1-02608C9EEBAC},10"
+
+
+; QSound ids:
+;20071018SYSFX_UI_CLSID      = "{0BF47CA8-6767-4d2f-9836-4BF50B917192}"
+SYSFX_PREMIX_CLSID  = "{0BF47CA2-6767-4d2f-9836-4BF50B917192}"
+SYSFX_POSTMIX_CLSID = "{0BF47CA1-6767-4d2f-9836-4BF50B917192}"
+SYSFX_FriendlyName  = "nanoQ Audio Technology"
+
